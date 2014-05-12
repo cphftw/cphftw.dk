@@ -5832,7 +5832,7 @@ header {
   padding: 30px 0 30px;
   border-top: 1px solid #FFF;
   border-bottom: 1px solid #DDD;
-  background-image: url('/images/splash.jpg');
+  background-image: url('../images/splash.jpg');
   background-repeat: no-repeat;
   background-position: center 55%;
   background-size: cover;
@@ -5905,7 +5905,7 @@ header .navigation li a:hover {
 }
 
 .page .splash {
-    background: url('/images/splash.jpg');
+    background: url('../images/splash.jpg');
     background-size: cover;
     background-position: 50% 30%;    
 
