@@ -1,13 +1,79 @@
 ---
 layout: default
-title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<div class="page frontpage">
+
+    <header>
+      <ul class="navigation">
+        <li><a class="btn-white" href="/">#cphftw</a></li>
+        <li><a class="btn-white" href="/past/">Past events</a></li>
+        <li><a class="btn-white" href="/media/">Photos &amp; Video</a></li>
+        <li><a class="btn-white" href="/about/">About</a></li>
+      </ul>
+    </header>
+
+	<section class="splash">
+		<div class="wrapper vertical-center-align">	      
+			<div class="inner">	      
+			  	<div class="arrow">
+			  		<img src="/images/arrow.png">
+			  	</div>
+
+	 		</div>
+ 		</div>
+	</section>
+
+	<section class="about">
+		<div class="inner">
+			<h2>The Copenhagen startup scene. United.</h2>
+			<p>#cphftw is Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id libero eget risus iaculis dignissim. Fusce nec sapien sodales, eleifend ante sed, malesuada nibh.</p>
+			<p>Mauris ornare felis quis tellus congue, ut luctus diam eleifend. Nulla nunc justo, viverra consequat lacus id, gravida varius magna. Maecenas vel elit bibendum, lobortis purus ut, semper orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada urna sit amet condimentum eleifend. Morbi cursus sapien ultrices varius interdum.</p>
+
+		</div>	
+
+	</section>
+
+	<section class="next-event">
+	  <div class="inner">
+	    <h2 class="text-center">Our event will take place at</h2>
+	    {% for page in site.posts limit:1 %}
+	      {% if page.date %}
+	      <div class="header">
+	        {% if page.lanyrd %}
+	          <a href="{{ page.lanyrd }}">{{ page.date | date: "%A, %B %d, %H:%M" }}</a>
+	        {% else %}
+	          {{ page.date | date: "%A, %B %d, %H:%M" }}
+	        {% endif %}
+	      </div>
+	      {% endif %}
+
+	      <div class="post">
+	        <div class="post_content">
+	          {{ page.content }}
+	        </div>
+	      </div>
+	    {% endfor %}
+	  </div>
+	</section>
+
+	<footer class="social">
+	    <div class="inner">
+	    	<h3>Contact or follow us.</h3>
+
+			<p><a href="mailto:hello@cphftw.dk">hello@cphftw.dk</a></p>
+			<p>or</p>
+
+		  	<div class="social">
+	    	    <a href="https://twitter.com/cphftw" class="twitter-follow-button" data-show-count="true">Follow @cphftw</a>
+	    	    <a href="https://twitter.com/share?url=http://cphftw.dk" class="twitter-share-button" data-via="cphftw" data-related="cphftw">Tweet</a>
+
+				<div class="fb-like" data-href="http://cphftw.dk" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+ 			</div>
+
+
+
+	    </div>
+	</footer>
+
+ </div>
