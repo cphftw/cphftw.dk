@@ -6,8 +6,7 @@ layout: default
 
     <header>
       <ul class="navigation">
-        <li><a class="btn-white" href="{{ site.baseurl }}">#cphftw</a></li>
-        <li><a class="btn-white" href="{{ site.baseurl }}/past/">Past events</a></li>
+        <li><a class="btn-white" href="{{ site.baseurl }}/">#cphftw</a></li>
         <li><a class="btn-white" href="{{ site.baseurl }}/media/">Photos &amp; Video</a></li>
         <li><a class="btn-white" href="{{ site.baseurl }}/about/">About</a></li>
       </ul>
@@ -41,8 +40,8 @@ layout: default
 	    {% for page in site.posts limit:1 %}
 	      {% if page.date %}
 	      <div class="header">
-	        {% if page.lanyrd %}
-	          <a href="{{ page.lanyrd }}">{{ page.date | date: "%A, %B %d, %H:%M" }}</a>
+	        {% if page.event %}
+	          <a href="{{ page.event }}">{{ page.date | date: "%A, %B %d, %H:%M" }}</a>
 	        {% else %}
 	          {{ page.date | date: "%A, %B %d, %H:%M" }}
 	        {% endif %}
