@@ -1,7 +1,11 @@
 name: cphftw.dk
-highlighter: pygments
 baseurl: /cphftw.dk
+
+highlighter: pygments
+markdown: kramdown
 
 sass:
     sass_dir: css
 
+gems:
+  - jekyll-sitemap
