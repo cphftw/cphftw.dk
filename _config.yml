@@ -1,5 +1,7 @@
 name: cphftw.dk
-markdown: redcarpet
-pygments: true
-
+highlighter: pygments
 baseurl: /cphftw.dk
+
+sass:
+    sass_dir: css
+
