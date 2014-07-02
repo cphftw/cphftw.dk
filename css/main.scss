@@ -31,7 +31,7 @@ header {
   background-repeat: no-repeat;
   background-position: center 55%;
   background-size: cover;
-  position: relative;  
+  position: relative;
 }
 
 .frontpage header {
@@ -47,7 +47,7 @@ header {
   background: none;
 }
 
-.page { 
+.page {
     color: #000;
     min-width: 320px;
 }
@@ -59,7 +59,7 @@ header {
     max-width: 850px;
     width: auto !important;
     font-size: 18px;
-    padding: 30px; 
+    padding: 30px;
 }
 
 .container h2 {
@@ -102,9 +102,9 @@ header {
 .page .splash {
     background: url('../images/splash.jpg');
     background-size: cover;
-    background-position: 50% 30%;    
+    background-position: 50% 30%;
 
-    height: 100vh;
+    height: 550px;
 
     display: -webkit-box;
     display: -webkit-flex;
@@ -146,7 +146,7 @@ header {
 }
 
 .splash .arrow {
-  
+
   -webkit-animation: bounce 2s infinite;
   -moz-animation: bounce 2s infinite;
   -ms-animation: bounce 2s infinite;
@@ -160,13 +160,13 @@ header {
 }
 
 .splash .arrow img {
-  width: 62px;  
+  width: 62px;
 }
 
 .page section .inner {
     margin: 0 auto;
     padding: 60px 20px 60px 20px;
-    max-width: 900px;    
+    max-width: 900px;
     text-align: center;
 }
 
@@ -204,7 +204,9 @@ header {
 
 .frontpage .about {
     background: #000;
-    color: #fff; 
+    color: #fff;
+
+    display: none;
 }
 
 .frontpage  .about p {
@@ -227,7 +229,7 @@ a:visited {
 
 .frontpage .next-event {
     background: #fff;
-    color: #000000; 
+    color: #000000;
 }
 
 .frontpage .next-event {
@@ -244,7 +246,7 @@ a:visited {
     font-size: 50px;
 
     padding: 20px 0;
-    margin-bottom: 80px;   
+    margin-bottom: 80px;
 }
 
 .frontpage .next-event .post {
@@ -274,13 +276,13 @@ a:visited {
 footer  {
     border-top: 1px solid #ebebeb;
     background: #f6f6f6;
-        color: #000000; 
+        color: #000000;
 }
 
 footer .inner {
     margin: 0 auto;
     padding: 60px 20px 60px 20px;
-    max-width: 900px;    
+    max-width: 900px;
     text-align: center;
 }
 
@@ -321,8 +323,8 @@ footer .inner {
     -webkit-transform: translateY(-15px);
     -moz-transform: translateY(-15px);
     -ms-transform: translateY(-15px);
-    transform: translateY(-15px); 
-    } 
+    transform: translateY(-15px);
+    }
 }
 
 @-moz-keyframes bounce {

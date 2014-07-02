@@ -5773,7 +5773,7 @@ header {
   background: url("../images/splash.jpg");
   background-size: cover;
   background-position: 50% 30%;
-  height: 100vh;
+  height: 550px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -5853,7 +5853,8 @@ header {
 
 .frontpage .about {
   background: #000;
-  color: #fff; }
+  color: #fff;
+  display: none; }
 
 .frontpage .about p {
   font-size: 22px; }
