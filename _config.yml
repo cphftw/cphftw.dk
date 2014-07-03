@@ -1,5 +1,5 @@
 name: cphftw.dk
-baseurl: /cphftw.dk
+baseurl: /
 
 highlighter: pygments
 markdown: kramdown
